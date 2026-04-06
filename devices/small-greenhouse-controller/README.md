@@ -13,6 +13,7 @@
 - [operations.md](./operations.md)
 - [hardware/component-options.md](./hardware/component-options.md)
 - [hardware/bom.md](./hardware/bom.md)
+- [hardware/wiring.md](./hardware/wiring.md)
 - [software/control-notes.md](./software/control-notes.md)
 - [software/firmware/README.md](./software/firmware/README.md)
 - [setup/prototype-plan.md](./setup/prototype-plan.md)
