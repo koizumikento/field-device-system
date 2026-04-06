@@ -23,6 +23,7 @@ devices/
     operations.md
     diagrams/
     hardware/
+      bom.md
     software/
     setup/
     tests/
@@ -30,7 +31,7 @@ devices/
 
 ## Documentation rules
 
-- Prefer Markdown files for explanatory content such as purpose, requirements, architecture, and operations.
+- Prefer Markdown files for explanatory content such as purpose, requirements, architecture, operations, and BOM notes.
 - Prefer folders only for collections of artifacts or implementation assets.
 - Keep diagrams, wiring drawings, and system figures inside `diagrams/`.
 - Do not split narrative content into many small folders unless there is a clear volume reason.
@@ -41,6 +42,7 @@ devices/
 - Use `kebab-case` for device names and directory names.
 - Name device folders by the device itself, not by a broad theme.
 - Keep file names predictable: `purpose.md`, `requirements.md`, `architecture.md`, `operations.md`.
+- When a device has a working parts list, store it as `hardware/bom.md`.
 
 ## README expectations
 

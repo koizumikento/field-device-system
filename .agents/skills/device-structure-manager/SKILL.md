@@ -41,6 +41,7 @@ devices/
     operations.md
     diagrams/
     hardware/
+      bom.md
     software/
     setup/
     tests/
@@ -60,6 +61,7 @@ The canonical scaffold templates live under `assets/device-template/`.
    - `requirements.md`
    - `architecture.md`
    - `operations.md`
+   - `hardware/bom.md`
 6. Keep artifact collections in folders:
    - `diagrams/`
    - `hardware/`

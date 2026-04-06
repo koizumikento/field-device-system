@@ -11,6 +11,7 @@
 - [requirements.md](./requirements.md)
 - [architecture.md](./architecture.md)
 - [operations.md](./operations.md)
+- [hardware/bom.md](./hardware/bom.md)
 
 ## Notes
 
