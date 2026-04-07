@@ -3,8 +3,8 @@
 ## 前提
 
 - この BOM は `ソラカメ屋外スターターキットを使わない` 前提でまとめる。
-- 標準構成は `+F FS045W + SIM`、`細いポール固定`、`カメラ直下に箱配置`、`7日交換 + 予備1本` とする。
-- `積雪` と `直射日光` を考慮して、蓄電池は `12.8V 120Ah LiFePO4` を採用する。
+- 標準構成は `+F FS045W + 楽天モバイル Rakuten最強プラン`、`外径φ48.6mm 単管パイプ固定`、`カメラ直下に箱配置`、`7日交換 + 予備1本` とする。
+- `積雪` と `直射日光` を考慮して、蓄電池は `ENEBOOST 12V-120Ah` を採用する。
 
 ## 部品表
 
@@ -14,27 +14,26 @@
 | --- | --- | ---: | --- | --- |
 | カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | `5V / 2A`、`IP65` |
 | LTE ルーター | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 1 | 富士ソフト / 販売店 | 標準採用 |
-| SIM | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 1 | 回線事業者 | 事業者と APN は別途確定 |
-| 蓄電池 | `12.8V 120Ah LiFePO4` | 2 | 別調達 | 使用中 1 本 + 予備 1 本 |
+| SIM | [楽天モバイル `Rakuten最強プラン`](https://network.mobile.rakuten.co.jp/fee/saikyo-plan/) | 1 | 楽天モバイル | 富士ソフトの自社 SIM ではなく別契約。`+F 動作確認済 SIM` に掲載、`APN 自動`、手動時は `rakuten.jp` |
+| 蓄電池 | [ENEBOOST 12V-120Ah](https://bobsmachine.jp/shop/eb-12v120ah/) | 2 | ボブズマシンジャパン | 使用中 1 本 + 予備 1 本 |
+| 充電器 | [バッテリーチャージャー 12V25A `BJ900F-12`](https://bobsmachine.jp/shop/bj900f-12/) | 1 | ボブズマシンジャパン | ENEBOOST / Impulse Lithium 専用 |
 | 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | カメラと FS045W を同時給電 |
 | 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近く |
 | 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | 一次側保護 |
 | 電装収納箱 | [タカチ WP20-28-7G](https://stage.takachi-el.co.jp/products/WP-P) | 1 | タカチ電機工業 / 販売店 | `IP67` |
 | USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | 成端済み USB ケーブルを箱外へ出す |
-| バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 2 | 別調達 | 使用中 1 箱 + 予備 1 箱 |
-| 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | 細いポール固定の標準採用 |
-| 固定材 | ステンレスバンド、耐候結束バンド、簡易遮熱板 | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
+| バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 2 | 別調達 | Group 31 サイズ。ENEBOOST 取説も `グループ31サイズ` トレー固定を推奨 |
+| 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | `1.0" - 2.1"` 径対応。`φ48.6mm` ポールで使う |
+| 固定材 | ステンレスバンド、耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 箱上の小庇遮熱 |
 | 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線 |
 | 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内のサービス切り離し用 |
 
 ## 追加オプション
 
-### ネットワークを別調達する場合
+### 通信まわりの追加オプション
 
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| 通信 | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 0-1 | 富士ソフト / 販売店 | 第一候補として選定。`nanoSIM + eSIM`、`20時間`、`2.4/5GHz Wi-Fi`、最大 `15台` |
-| 通信 | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 0-1 | 回線事業者 | 契約プランに合わせて選定 |
 | 通信オプション | [+F 充電/LANステーション `CLS001`](https://fsi-plusf.jp/products/option/lan_station/index.html) | 0-1 | 富士ソフト / 販売店 | 将来 `据え置き` や `バッテリーレス` に寄せる場合の拡張用 |
 | 保護 | ルーター収納用防水ボックス | 0-1 | 別調達 | ルーターを電装箱と分けて屋外設置する場合のみ |
 
@@ -49,6 +48,18 @@
   - オプションの `+F 充電/LANステーション` を使うと、将来 `バッテリーレスで365日・24時間` の据え置き運用へ寄せられる
   - ユーザーガイド上の 4G 対応バンドが広く、日本国内の主要 LTE バンド `B1/B3/B8/B18/B19/B26/B28/B41` を含む
 - 今回 `FS040W` ではなく `FS045W` を選んだのは、より新しく、`eSIM` と `バッテリーレス運用` の逃げ道があるため
+
+### SIM 選定結果
+
+- `FS045W` の販売元である富士ソフトは、`FS045W` 向けの自社 SIM 契約を前面には提供していない
+- 公式案内では `SIMカード/eSIM（通信の契約）は別途必要` としている
+- 一方で法人向けページでは `法人のお客様向けに回線のご提案も可能です` と案内している
+- 以上から、`富士ソフト直販の固定SIM商品` ではなく、`別事業者契約が前提で必要なら販売元に回線相談もできる` と整理する
+- 今回の採用値は `楽天モバイル Rakuten最強プラン`
+- 理由:
+  - `+F 動作確認済 SIM` 一覧に `Rakuten最強プラン` が掲載されており、`FS045W` 列も `4G` で確認できる
+  - 楽天モバイル公式の `Rakuten最強プラン` では `ギガ無制限` が明示されている
+  - `APN 自動設定` を基本にでき、手動設定時の APN は `rakuten.jp`
 
 ### LTE を入れた場合の電力メモ
 
@@ -68,7 +79,7 @@
 
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| 蓄電池 | 12.8V 120Ah クラス `LiFePO4` | 1 | 別調達 | 採用。`4W` 設計基準に環境余裕を乗せる |
+| 蓄電池 | [ENEBOOST 12V-120Ah](https://bobsmachine.jp/shop/eb-12v120ah/) | 1 | ボブズマシンジャパン | 採用。`1536Wh`、`329 x 170 x 216mm`、`約14.5kg`、`IP67` |
 | 電源変換 | 12V -> 5V DC-DC コンバータ `5V / 3A` 以上 | 1 | 別調達 | カメラ給電用。変換損失を見込んで余裕を持たせる |
 | 保護 | ヒューズ、バッテリーモニタ | 1式 | 別調達 | 過電流保護と残量管理用 |
 | 収納 | 防雨・防滴バッテリーボックス | 1 | 別調達 | 結露、浸水、直射日光対策を含む |
@@ -82,8 +93,8 @@
 | カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | カメラ本体。`FS045W` に Wi-Fi 接続する |
 | 長尺電源ケーブル | [USBケーブル 4.5m](https://www.atomtech.co.jp/products/atom-cam-usb-cable) | 1 | ATOM Tech | バッテリーボックスや制御箱を少し離して置けるよう、今回は入れておく |
 | LTE ルーター | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 1 | 富士ソフト / 販売店 | 標準採用 |
-| 回線 | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 1 | 回線事業者 | 要確定 |
-| 蓄電池 | `12.8V 120Ah LiFePO4` | 1 | 別調達 | 現場搭載分 |
+| 回線 | [楽天モバイル `Rakuten最強プラン`](https://network.mobile.rakuten.co.jp/fee/saikyo-plan/) | 1 | 楽天モバイル | `+F 動作確認済 SIM` 掲載。手動 APN は `rakuten.jp` |
+| 蓄電池 | [ENEBOOST 12V-120Ah](https://bobsmachine.jp/shop/eb-12v120ah/) | 1 | ボブズマシンジャパン | 現場搭載分 |
 | 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | `12V -> 5V USB` 変換を兼ねる。`4.8A total`、`IP45`、パネル穴加工前提 |
 | 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近くに入れる |
 | 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | この構成の一次側保護用 |
@@ -91,7 +102,7 @@
 | USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | `IP68`。`2〜8mm` 径ケーブル対応。`USB` のような成端済みケーブルを箱外へ出す用途 |
 | バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 1 | 別調達 | Group `24-31` 対応。国内入手性が悪ければ同等の `Group 31 対応箱` に置換可 |
 | 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | 細いポール固定の標準 |
-| 固定材 | ステンレスバンド、耐候結束バンド、簡易遮熱板 | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
+| 固定材 | ステンレスバンド、耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
 | 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線用 |
 | 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内に収める `サービス切り離し用`。屋外露出はさせない |
 
@@ -99,9 +110,7 @@
 
 | 区分 | 型番・商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| 充電器 | [Renogy 12V 20A AC-DC LiFePO4充電器 `RBC20A1P-JP`](https://jp.renogy.com/products/20a-ac-to-dc-lfp-portable-battery-charger) | 1 | Renogy JP | 週次の持ち帰り充電用。`IP65` |
-| 残量計 | [Renogy RBM500 バッテリーモニター `RBM500-JP`](https://jp.renogy.com/en/products/renogy-battery-remote-meter) | 1 | Renogy JP | 電圧、電流、容量を確認できる |
-| 予備蓄電池 | `12.8V 120Ah LiFePO4` | 1 | 別調達 | 予備 1 本を固定で持つ |
+| 予備蓄電池 | [ENEBOOST 12V-120Ah](https://bobsmachine.jp/shop/eb-12v120ah/) | 1 | ボブズマシンジャパン | 予備 1 本を固定で持つ |
 
 #### この BOM の考え方
 
@@ -118,14 +127,14 @@
 
 - `Blue Sea 1045` は `Dual USB` なので、片側を `ATOM Cam Swing`、もう片側を `FS045W` に使う
 - `FS045W` 本体は `WP20-28-7G` の中に同居させるより、電波状態を見ながら `別箱` に分ける方が調整しやすい
+- `FS045W` の動作温度範囲は `0°C〜35°C` なので、直射日光を避ける `小庇` と `通風` は必須とみなす
 
 #### 具体 BOM の概算メモ
 
 - `ATOM Cam Swing + ライセンス`: `5,680円`
 - `USBケーブル 4.5m`: `980円`
-- `12.8V 120Ah LiFePO4`: `別見積もり`
-- `Renogy 12V 20A AC-DC LiFePO4充電器`: `15,999円`
-- `Renogy RBM500`: `8,283円`
+- `ENEBOOST 12V-120Ah`: `110,000円`
+- `バッテリーチャージャー 12V25A BJ900F-12`: `34,000円`
 - `タカチ WP20-28-7G`: `3,960円` 税別
 - `Blue Sea` と `NOCO` の国内価格は販売店差が大きいので別見積もり
 - `Scanstrut DS16-P-BLK` と `Anderson Powerpole PP15/45` も販売店差が大きいので別見積もり
@@ -144,7 +153,7 @@
 
 ### 先に結論
 
-- 採用値は `LiFePO4 12.8V 120Ah`
+- 採用値は `ENEBOOST 12V-120Ah`
 - `4W` 固定前提での最小基準は `LiFePO4 12.8V 100Ah`
 - `AGM` を使うなら `12V 150Ah` 以上
 - 今回は `積雪`、`直射日光`、`7日交換` の運用余裕を見て `120Ah` を選ぶ
@@ -215,10 +224,8 @@
 
 ## 要確認項目
 
-- `SIM事業者` と `APN`
-- `細いポール` の実寸
-- `直射日光` をどこまで避けられるか
 - 冬季に `0°C 未満` で充電が起こりうるか
+- `FS045W` の LTE 受信が弱い現場で、ルーターを `別箱` に出す必要があるか
 
 ## 参考情報
 
@@ -228,6 +235,10 @@
 - [USBケーブル 4.5m](https://www.atomtech.co.jp/products/atom-cam-usb-cable)
 - [三脚にも対応！ソラカメ対応カメラ「ATOM Cam」設置ノウハウ](https://blog.soracom.com/ja-jp/2023/06/26/sora-cam-installation/)
 - [SORACOM 屋外ソーラーキット仕様](https://soracom.jp/store/32800/)
-- [Renogy 12V 100Ah Pro LiFePO4](https://www.renogy.com/products/12v-100ah-pro-smart-lithium-iron-phosphate-battery-w-bluetooth-self-heating-function)
-- [Renogy 12V 100Ah AGM](https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah)
+- [+F FS045W](https://fsi-plusf.jp/products/FS045W/)
+- [+F 動作確認済 SIM](https://fsi-plusf.jp/confirmed/index.html)
+- [楽天モバイル Rakuten最強プラン](https://network.mobile.rakuten.co.jp/fee/saikyo-plan/)
+- [楽天モバイル APN `rakuten.jp`](https://network.mobile.rakuten.co.jp/guide/setting/ios/)
+- [ENEBOOST 12V-120Ah](https://bobsmachine.jp/shop/eb-12v120ah/)
+- [ENEBOOST 取扱説明書](https://bobsmachine.jp/wp-content/uploads/2025/11/eneboost-instructions.pdf)
 - [Toshiba SCiB](https://www.global.toshiba/ww/products-solutions/battery/scib/about.html)

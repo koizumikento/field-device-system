@@ -8,7 +8,7 @@
 
 - Device: `ATOM Cam Swing`
 - Sensors or actuators: 追加センサーやアクチュエータは持たない
-- Communication: `+F FS045W + SIM`
+- Communication: `+F FS045W + 楽天モバイル Rakuten最強プラン`
 - External systems: ソラカメのクラウド録画ライセンス、ユーザーコンソール、スマホアプリ、`+F FS045W`
 
 ## Data flow
