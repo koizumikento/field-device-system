@@ -3,22 +3,29 @@
 ## 前提
 
 - この BOM は `ソラカメ屋外スターターキットを使わない` 前提でまとめる。
-- 基本構成は `商用電源あり + 既存 2.4GHz Wi-Fi あり` を想定する。
-- `既存 Wi-Fi が使えない`、または `独立電源が必要` な場合は、ネットワーク系と電源系を別途追加設計する。
+- 標準構成は `+F FS045W + SIM`、`細いポール固定`、`カメラ直下に箱配置`、`7日交換 + 予備1本` とする。
+- `積雪` と `直射日光` を考慮して、蓄電池は `12.8V 120Ah LiFePO4` を採用する。
 
 ## 部品表
 
-### 標準構成: 商用電源あり + 既存 Wi-Fi 利用
+### 標準構成: LTE + 交換式バッテリー運用
 
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | `IP65`、同梱 USB ケーブル `1.8m`、同梱アダプタ `5V / 2000mA`、アダプタは防水非対応 |
-| 取付金具 | 1/4 インチ三脚ネジ方式ブラケット | 1 | 別調達 | `ATOM Cam Swing` は別売りブラケット対応。壁面、天井、支柱向けに現場で選定 |
-| 固定材 | ステンレスバンド、木ねじ、コンクリート用アンカーなど | 1式 | 近場調達 | 設置面に合わせて選定 |
-| 電源保護 | 屋外用防水コンセントボックス、または防水ジャンクションボックス | 1 | 別調達 | 同梱アダプタや USB 接続部を雨掛かりから守る |
-| 配線延長 | [ATOM Cam Swing 用 USBケーブル 4.5m](https://www.atomtech.co.jp/products/atom-cam-usb-cable) | 0-1 | ATOM 公式ストア | 同梱 `1.8m` で不足する場合のみ |
-| 配線保護 | UV 耐候結束バンド、自己融着テープ、ケーブルクランプ | 1式 | 近場調達 | 配線の抜け止めと養生用 |
-| 任意記録 | microSD カード | 0-1 | 別調達 | ローカル録画を使う場合のみ。クラウド録画だけなら不要 |
+| カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | `5V / 2A`、`IP65` |
+| LTE ルーター | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 1 | 富士ソフト / 販売店 | 標準採用 |
+| SIM | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 1 | 回線事業者 | 事業者と APN は別途確定 |
+| 蓄電池 | `12.8V 120Ah LiFePO4` | 2 | 別調達 | 使用中 1 本 + 予備 1 本 |
+| 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | カメラと FS045W を同時給電 |
+| 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近く |
+| 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | 一次側保護 |
+| 電装収納箱 | [タカチ WP20-28-7G](https://stage.takachi-el.co.jp/products/WP-P) | 1 | タカチ電機工業 / 販売店 | `IP67` |
+| USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | 成端済み USB ケーブルを箱外へ出す |
+| バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 2 | 別調達 | 使用中 1 箱 + 予備 1 箱 |
+| 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | 細いポール固定の標準採用 |
+| 固定材 | ステンレスバンド、耐候結束バンド、簡易遮熱板 | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
+| 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線 |
+| 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内のサービス切り離し用 |
 
 ## 追加オプション
 
@@ -49,6 +56,7 @@
 - 理由は、SORACOM が屋外ソーラーキットで `ソラカメ + 通信用ドングル接続による常時録画` を `約4W` として扱っているため
 - したがって、`ATOM Cam Swing + FS045W` 構成でも、まずは `システム負荷 4W` を基準設計値とする
 - `FS045W` 単体の消費電力推定は補助情報に留め、容量計算の主値には使わない
+- ただし今回は `積雪` と `直射日光`、`7日交換`、`予備1本` の運用余裕を見て、採用品は `120Ah`
 
 ### 独立電源化する場合
 
@@ -60,28 +68,30 @@
 
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| 蓄電池 | 12.8V 100Ah クラス `LiFePO4` | 1 | 別調達 | 推奨。`4W` 連続負荷を 7 日間まかなう前提の第一候補 |
+| 蓄電池 | 12.8V 120Ah クラス `LiFePO4` | 1 | 別調達 | 採用。`4W` 設計基準に環境余裕を乗せる |
 | 電源変換 | 12V -> 5V DC-DC コンバータ `5V / 3A` 以上 | 1 | 別調達 | カメラ給電用。変換損失を見込んで余裕を持たせる |
 | 保護 | ヒューズ、バッテリーモニタ | 1式 | 別調達 | 過電流保護と残量管理用 |
 | 収納 | 防雨・防滴バッテリーボックス | 1 | 別調達 | 結露、浸水、直射日光対策を含む |
 
-### 具体 BOM 例: 7 日間 / ソーラーなし / 既存 Wi-Fi あり / 1 台運用
+### 具体 BOM 例: 7 日間 / ソーラーなし / LTE / 1 台運用
 
 #### 最小構成
 
 | 区分 | 型番・商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | カメラ本体。`5V / 2A` 給電、`2.4GHz Wi-Fi` 利用 |
+| カメラ | [ソラカメ対応製品] ATOM Cam Swing + ライセンス | 1 | SORACOM IoT ストア | カメラ本体。`FS045W` に Wi-Fi 接続する |
 | 長尺電源ケーブル | [USBケーブル 4.5m](https://www.atomtech.co.jp/products/atom-cam-usb-cable) | 1 | ATOM Tech | バッテリーボックスや制御箱を少し離して置けるよう、今回は入れておく |
-| 蓄電池 | [Renogy Coreシリーズ 12V 100Ah LiFePO4 `RBT12100LFP-JP`](https://jp.renogy.com/products/rbt12100lfp) | 1 | Renogy JP | `12.8V 100Ah`、`IP65`、低温カットオフ付き |
+| LTE ルーター | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 1 | 富士ソフト / 販売店 | 標準採用 |
+| 回線 | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 1 | 回線事業者 | 要確定 |
+| 蓄電池 | `12.8V 120Ah LiFePO4` | 1 | 別調達 | 現場搭載分 |
 | 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | `12V -> 5V USB` 変換を兼ねる。`4.8A total`、`IP45`、パネル穴加工前提 |
 | 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近くに入れる |
 | 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | この構成の一次側保護用 |
 | 電装収納箱 | [タカチ WP20-28-7G](https://stage.takachi-el.co.jp/products/WP-P) | 1 | タカチ電機工業 / 販売店 | `ASA樹脂`、`IP67`、標準価格税別 `3,960円` |
 | USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | `IP68`。`2〜8mm` 径ケーブル対応。`USB` のような成端済みケーブルを箱外へ出す用途 |
 | バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 1 | 別調達 | Group `24-31` 対応。国内入手性が悪ければ同等の `Group 31 対応箱` に置換可 |
-| 取付金具 | [サンワダイレクト 200-BKT005](https://direct.sanwa.co.jp/ItemPage/200-BKT005) | 1 | サンワダイレクト | `1/4インチ`、耐荷重 `2kg` |
-| 固定材 | ステンレスバンド、木ねじ、アンカー、耐候結束バンド | 1式 | 近場調達 | 取付面に合わせて選定 |
+| 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | 細いポール固定の標準 |
+| 固定材 | ステンレスバンド、耐候結束バンド、簡易遮熱板 | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
 | 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線用 |
 | 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内に収める `サービス切り離し用`。屋外露出はさせない |
 
@@ -91,34 +101,29 @@
 | --- | --- | ---: | --- | --- |
 | 充電器 | [Renogy 12V 20A AC-DC LiFePO4充電器 `RBC20A1P-JP`](https://jp.renogy.com/products/20a-ac-to-dc-lfp-portable-battery-charger) | 1 | Renogy JP | 週次の持ち帰り充電用。`IP65` |
 | 残量計 | [Renogy RBM500 バッテリーモニター `RBM500-JP`](https://jp.renogy.com/en/products/renogy-battery-remote-meter) | 1 | Renogy JP | 電圧、電流、容量を確認できる |
-| 予備蓄電池 | [Renogy Coreシリーズ 12V 100Ah LiFePO4 `RBT12100LFP-JP`](https://jp.renogy.com/products/rbt12100lfp) | 1 | Renogy JP | 交換運用するなら実質これが一番効く |
+| 予備蓄電池 | `12.8V 120Ah LiFePO4` | 1 | 別調達 | 予備 1 本を固定で持つ |
 
 #### この BOM の考え方
 
 - `12V系のバッテリー` から `5V USB` を作るところは、今回は `Blue Sea 1045` を使って簡素化する。
 - `Pololu の裸基板型 DC-DC` でも組めるが、今回は `配線加工を減らす` 方を優先した。
 - `予備蓄電池なし` でも 7 日運用は可能だが、充電中のダウンタイムが出る。
-- `予備蓄電池あり` にすると、現地では `1週間ごとに箱ごと交換` の運用に寄せやすい。
+- 今回は `予備蓄電池 1 本あり` を前提にし、`1週間ごとに箱ごと交換` する。
 
 #### LTE 運用へ切り替える差分
 
 | 区分 | 型番・商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
-| LTE ルーター | [+F FS045W `FS045WMB1`](https://fsi-plusf.jp/products/FS045W/) | 1 | 富士ソフト / 販売店 | カメラの接続先 AP として使う |
-| 回線 | [動作確認済 SIM 一覧](https://fsi-plusf.jp/confirmed/) にある nanoSIM または eSIM | 1 | 回線事業者 | プランに応じて選定 |
-| ルーター給電 | FS045W 同梱 `USB Type-C ケーブル` | 1 | 同梱品 | `Blue Sea 1045` の空き USB ポートから給電する |
-| 蓄電池 | `12.8V 100Ah LiFePO4` | 1 | 別調達 | `4W` 設計基準でそのまま運用する |
+| なし | なし | 0 | - | すでに標準構成へ織り込み済み |
 
 - `Blue Sea 1045` は `Dual USB` なので、片側を `ATOM Cam Swing`、もう片側を `FS045W` に使う
-- LTE 運用時は、`カメラ + ルーター` を同じ `WP20-28-7G` 系統から給電する
 - `FS045W` 本体は `WP20-28-7G` の中に同居させるより、電波状態を見ながら `別箱` に分ける方が調整しやすい
-- 余裕を多めに見たい場合だけ、`12.8V 120Ah` へ増やす
 
 #### 具体 BOM の概算メモ
 
 - `ATOM Cam Swing + ライセンス`: `5,680円`
 - `USBケーブル 4.5m`: `980円`
-- `Renogy Core 12V 100Ah LiFePO4`: `36,000円`
+- `12.8V 120Ah LiFePO4`: `別見積もり`
 - `Renogy 12V 20A AC-DC LiFePO4充電器`: `15,999円`
 - `Renogy RBM500`: `8,283円`
 - `タカチ WP20-28-7G`: `3,960円` 税別
@@ -139,9 +144,10 @@
 
 ### 先に結論
 
-- 基準設計値は `LiFePO4 12.8V 100Ah`
+- 採用値は `LiFePO4 12.8V 120Ah`
+- `4W` 固定前提での最小基準は `LiFePO4 12.8V 100Ah`
 - `AGM` を使うなら `12V 150Ah` 以上
-- `120Ah` は `寒冷地`、`劣化余裕`、`交換間隔の余裕` を見たい場合の上積みであって、別ケースではない
+- 今回は `積雪`、`直射日光`、`7日交換` の運用余裕を見て `120Ah` を選ぶ
 - `5V / 2A` の `10W` は `平均負荷` ではなく `給電上限`
 
 ### 7 日間で必要な容量の見え方
@@ -157,8 +163,8 @@
 
 | 種別 | 公称容量 | 7 日間への適合感 | 備考 |
 | --- | ---: | --- | --- |
-| `LiFePO4` | `12.8V 100Ah` | 基準構成として採用 | 今回の標準 |
-| `LiFePO4` | `12.8V 120Ah` | 余裕を増やす場合に有効 | 寒冷地や交換遅延に強い |
+| `LiFePO4` | `12.8V 100Ah` | 最小基準 | `4W` 固定前提なら成立 |
+| `LiFePO4` | `12.8V 120Ah` | 採用 | 積雪、直射日光、交換余裕を考慮 |
 | `AGM` | `12V 150Ah` | 最低ライン | 重量は増える |
 
 ### 今回の読み方
@@ -166,7 +172,7 @@
 - `12V系か 5V系か` は `変換段の話` であって、必要容量計算の主語は `Wh`。
 - カメラ本体は `5V系`。
 - 蓄電池システムは `12V系` で組んでよい。
-- その場合の必要容量は、`4W固定前提で LiFePO4 100Ah` と読む。
+- その場合の必要容量は、`4W固定前提で 100Ah が最小基準`、`今回は 120Ah を採用` と読む。
 
 ## 蓄電池の選び方
 
@@ -190,7 +196,6 @@
 - `ATOM Cam Swing` 自体は `IP65` だが、同梱の電源アダプタは防水非対応。屋外では `アダプタ本体` と `USB 接続部` の防雨対策が必要。
 - `ATOM Cam Swing` は `1/4 インチ三脚ネジ方式` の別売りブラケットに対応している。固定金具は公式付属品ではないため別調達にする。
 - `USBケーブル 4.5m` は純正品がある。屋外では延長接続点を増やさず、純正の長尺ケーブルを優先する。
-- `2.4GHz Wi-Fi` が安定しない場所では、ネットワークは別建てで検討する。現時点では `屋外スターターキット` 同梱ルーターの単体販売は前提にしない。
 - 独立電源を自作する場合は、`5V / 2A` は `給電上限`、`約4W` は `システム平均負荷の参考値` として別に扱う。
 - このドキュメントでは、`4W` を `標準の設計基準値` として扱い、ケース分けはしない。
 - `LiFePO4` の弱点は `低温時の充電`。冬季の屋外充電を考えるなら、`低温充電保護` または `自己加熱` 付きモデルが扱いやすい。
@@ -210,13 +215,10 @@
 
 ## 要確認項目
 
-- 設置面は `壁面`、`支柱`、`フェンス` のどれか
-- 給電点からカメラまでの距離は `1.8m` 以内か
-- `2.4GHz Wi-Fi` が設置位置まで安定して届くか
-- アダプタと USB 接続部を `どこで防雨収納するか`
-- 独立電源が必要なら `96Wh / 日` を最低目安にどこまで余裕をみるか
+- `SIM事業者` と `APN`
+- `細いポール` の実寸
+- `直射日光` をどこまで避けられるか
 - 冬季に `0°C 未満` で充電が起こりうるか
-- バッテリー交換性より `軽さ` と `寿命` を優先するか、`初期費用` を優先するか
 
 ## 参考情報
 
