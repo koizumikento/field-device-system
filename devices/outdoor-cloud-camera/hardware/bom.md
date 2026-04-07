@@ -20,11 +20,16 @@
 | 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | カメラと FS045W を同時給電 |
 | 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近く |
 | 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | 一次側保護 |
-| 電装収納箱 | [タカチ WP20-28-7G](https://stage.takachi-el.co.jp/products/WP-P) | 1 | タカチ電機工業 / 販売店 | `IP67` |
+| 電装収納箱 | [タカチ BCPR203013SN](https://www.takachi-el.co.jp/index.php/products/BCPR) | 1 | タカチ電機工業 / 販売店 | 屋外ルーフ付 `IP65`。`200 x 300 x 130mm`、内寸 `173.2 x 273.2 x 114mm` |
+| ルーター保護箱 | [タカチ BCPR131508S](https://www.takachi-el.co.jp/index.php/products/BCPR) | 1 | タカチ電機工業 / 販売店 | `FS045W` 専用。屋外ルーフ付 `IP65`。内寸 `110.5 x 130.5 x 71.5mm` |
+| ルーター箱通気 | [タカチ PMF-6B](https://www.takachi-el.co.jp/index.php/products/PMF) | 1 | タカチ電機工業 / 販売店 | `2L以内` の筐体向け。ルーター箱側面に付けて結露とこもり熱を逃がす |
 | USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | 成端済み USB ケーブルを箱外へ出す |
-| バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 2 | 別調達 | Group 31 サイズ。ENEBOOST 取説も `グループ31サイズ` トレー固定を推奨 |
+| バッテリー箱 | [BMO JAPAN バッテリーBOX 105A用 `10D0009`](https://www.neonet-marine.com/item/C11527.html) | 2 | ネオネットマリン等 | 内寸 `340 x 190 x 225mm`。`ENEBOOST 329 x 170 x 216mm` が入る。保護箱であり完全防水箱ではない |
 | 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | `1.0" - 2.1"` 径対応。`φ48.6mm` ポールで使う |
-| 固定材 | ステンレスバンド、耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 箱上の小庇遮熱 |
+| 箱固定金具 | [タカチ SSK-200](https://www.takachi-el.co.jp/products/SSK_BCAP) | 1式 | タカチ電機工業 / 販売店 | `BCPR203013SN` 用ポール取付金具 |
+| 箱固定金具 | [タカチ SSK-P120](https://www.takachi-el.co.jp/products/SSK_BCAP) | 1式 | タカチ電機工業 / 販売店 | `BCPR131508S` 用ポール取付金具 |
+| 箱固定ベルト | [タカチ PKB-10PM](https://www.takachi-el.co.jp/products/PKB) | 1式 | タカチ電機工業 / 販売店 | `SSK-200` と `SSK-P120` の固定用 |
+| 固定材 | 耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 箱上の小庇遮熱 |
 | 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線 |
 | 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内のサービス切り離し用 |
 
@@ -35,7 +40,7 @@
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
 | --- | --- | ---: | --- | --- |
 | 通信オプション | [+F 充電/LANステーション `CLS001`](https://fsi-plusf.jp/products/option/lan_station/index.html) | 0-1 | 富士ソフト / 販売店 | 将来 `据え置き` や `バッテリーレス` に寄せる場合の拡張用 |
-| 保護 | ルーター収納用防水ボックス | 0-1 | 別調達 | ルーターを電装箱と分けて屋外設置する場合のみ |
+| 保護 | [タカチ PMF-6B](https://www.takachi-el.co.jp/index.php/products/PMF) | 0-1 | タカチ電機工業 / 販売店 | ルーター箱の追加通気を増やす場合のみ |
 
 ### LTE ルーター選定結果
 
@@ -69,6 +74,23 @@
 - `FS045W` 単体の消費電力推定は補助情報に留め、容量計算の主値には使わない
 - ただし今回は `積雪` と `直射日光`、`7日交換`、`予備1本` の運用余裕を見て、採用品は `120Ah`
 
+### 箱の選定結果
+
+- `WP20-28-7G` は不採用にする
+- 理由:
+  - `WP20-28-7G` の有効内寸は `189 x 229 x 58.5mm`
+  - `Blue Sea 1045` の裏側配線、`PP15/45`、`USBケーブル` の曲げしろを入れると、`58.5mm` の有効高さでは作業余裕が薄い
+  - `FS045W` まで同居させる前提だとさらに厳しい
+- 電装箱の採用値は `BCPR203013SN`
+  - 内寸 `173.2 x 273.2 x 114mm`
+  - 屋外ルーフ付で、通信機器や監視カメラ用途を想定したシリーズ
+  - `Blue Sea 1045`、`PP15/45`、配線余長を収めやすい
+- ルーター保護箱の採用値は `BCPR131508S`
+  - 内寸 `110.5 x 130.5 x 71.5mm`
+  - `FS045W` 本体サイズ `74.0 x 74.0 x 19.6mm` に対して十分な余裕がある
+  - 小型なのでポール直下に分けて付けやすい
+- `FS045W` は `0°C〜35°C` 動作なので、ルーター箱は `PMF-6B` を側面取付して通気を確保する
+
 ### 独立電源化する場合
 
 | 区分 | 商品 | 数量 | 購入先 | 備考 |
@@ -98,11 +120,16 @@
 | 5V 変換 | [Blue Sea Systems 1045 12/24V Dual USB Charger 4.8A](https://www.bluesea.com/products/1045) | 1 | 別調達 | `12V -> 5V USB` 変換を兼ねる。`4.8A total`、`IP45`、パネル穴加工前提 |
 | 主ヒューズホルダ | [Blue Sea Systems 5061 Waterproof In-Line AGC/MDL Fuse Holder](https://www.bluesea.com/products/5061/Waterproof_In-Line_AGC_MDL_Fuse_Holder) | 1 | 別調達 | バッテリー正極の近くに入れる |
 | 主ヒューズ | [Blue Sea Systems 5215 AGC Fuse 10A](https://www.bluesea.com/products/5215/AGC_Fuse_-_10_Amp) | 1 | 別調達 | この構成の一次側保護用 |
-| 電装収納箱 | [タカチ WP20-28-7G](https://stage.takachi-el.co.jp/products/WP-P) | 1 | タカチ電機工業 / 販売店 | `ASA樹脂`、`IP67`、標準価格税別 `3,960円` |
+| 電装収納箱 | [タカチ BCPR203013SN](https://www.takachi-el.co.jp/index.php/products/BCPR) | 1 | タカチ電機工業 / 販売店 | 屋外ルーフ付 `IP65`。内寸 `173.2 x 273.2 x 114mm` |
+| ルーター保護箱 | [タカチ BCPR131508S](https://www.takachi-el.co.jp/index.php/products/BCPR) | 1 | タカチ電機工業 / 販売店 | `FS045W` 用。内寸 `110.5 x 130.5 x 71.5mm` |
+| ルーター箱通気 | [タカチ PMF-6B](https://www.takachi-el.co.jp/index.php/products/PMF) | 1 | タカチ電機工業 / 販売店 | 側面取付 |
 | USB ケーブルシール | [Scanstrut DS16-P-BLK](https://www.scanstrut.com/uk/off-road/cable-seal/vertical/ds16-p) | 1 | 別調達 | `IP68`。`2〜8mm` 径ケーブル対応。`USB` のような成端済みケーブルを箱外へ出す用途 |
-| バッテリー箱 | [NOCO BG31 Snap-Top Battery Box](https://no.co/support/BG31/) | 1 | 別調達 | Group `24-31` 対応。国内入手性が悪ければ同等の `Group 31 対応箱` に置換可 |
+| バッテリー箱 | [BMO JAPAN バッテリーBOX 105A用 `10D0009`](https://www.neonet-marine.com/item/C11527.html) | 1 | ネオネットマリン等 | 内寸 `340 x 190 x 225mm`。保護箱であり完全防水箱ではない |
 | 取付金具 | [RAM Mounts RAM-B-108B-A-366U](https://rammount.com/products/ram-b-108b-a-366u) | 1 | 別調達 | 細いポール固定の標準 |
-| 固定材 | ステンレスバンド、耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
+| 箱固定金具 | [タカチ SSK-200](https://www.takachi-el.co.jp/products/SSK_BCAP) | 1式 | タカチ電機工業 / 販売店 | `BCPR203013SN` 用 |
+| 箱固定金具 | [タカチ SSK-P120](https://www.takachi-el.co.jp/products/SSK_BCAP) | 1式 | タカチ電機工業 / 販売店 | `BCPR131508S` 用 |
+| 箱固定ベルト | [タカチ PKB-10PM](https://www.takachi-el.co.jp/products/PKB) | 1式 | タカチ電機工業 / 販売店 | `SSK` 用 |
+| 固定材 | 耐候結束バンド、`白色アルミ複合板 300 x 300 x 3mm`、`30mm` スペーサ | 1式 | 近場調達 | 細いポール固定 + 直射日光対策 |
 | 配線 | `1.25sq〜2sq` 2芯ケーブル、M8圧着端子 | 1式 | 近場調達 | バッテリー箱から電装箱までの DC 配線用 |
 | 着脱コネクタ | [Anderson Powerpole PP15/45](https://www.andersonpower.com/us/en/category.html/wire-to-wire/powerpole/powerpole-15-45.html) | 1式 | 別調達 | 電装箱内に収める `サービス切り離し用`。屋外露出はさせない |
 
@@ -126,8 +153,9 @@
 | なし | なし | 0 | - | すでに標準構成へ織り込み済み |
 
 - `Blue Sea 1045` は `Dual USB` なので、片側を `ATOM Cam Swing`、もう片側を `FS045W` に使う
-- `FS045W` 本体は `WP20-28-7G` の中に同居させるより、電波状態を見ながら `別箱` に分ける方が調整しやすい
+- `FS045W` は `BCPR131508S` に分離する前提にする。樹脂箱なので電波を殺しにくく、電装箱の発熱源とも分離できる
 - `FS045W` の動作温度範囲は `0°C〜35°C` なので、直射日光を避ける `小庇` と `通風` は必須とみなす
+- `BMO JAPAN バッテリーBOX 105A用` は `保護箱` であって `完全防水箱` ではないので、バッテリー側は `小庇` の真下に置く前提にする
 
 #### 具体 BOM の概算メモ
 
@@ -135,7 +163,9 @@
 - `USBケーブル 4.5m`: `980円`
 - `ENEBOOST 12V-120Ah`: `110,000円`
 - `バッテリーチャージャー 12V25A BJ900F-12`: `34,000円`
-- `タカチ WP20-28-7G`: `3,960円` 税別
+- `タカチ BCPR203013SN`: `6,710円` 税別
+- `タカチ BCPR131508S`: `3,220円` 税別
+- `タカチ PMF-6B`: `870円` 税別
 - `Blue Sea` と `NOCO` の国内価格は販売店差が大きいので別見積もり
 - `Scanstrut DS16-P-BLK` と `Anderson Powerpole PP15/45` も販売店差が大きいので別見積もり
 
